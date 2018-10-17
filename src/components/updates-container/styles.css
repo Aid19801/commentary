@@ -35,8 +35,10 @@
     
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .updates-list-update {
     font-family: 'Comfortaa', cursive;
+    color: white;
 }

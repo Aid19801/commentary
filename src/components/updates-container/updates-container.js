@@ -26,12 +26,12 @@ class UpdatesContainer extends Component {
 
         return (
             <div className="updates-container">
-                {data.map((each, i) => {
+                { data.map((each, i) => {
                     return (
                         <div className="updates-list-item" key={i}>
 
                             <div className="updates-list-circle-container">
-                                <h4 className="updates-list-item-number">14</h4>
+                                <h4 className="updates-list-item-number">{each.playerNumber}</h4>
                                 <img
                                     alt="circle"
                                     className="update-circle"

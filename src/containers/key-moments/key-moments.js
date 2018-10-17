@@ -34,8 +34,8 @@ class KeyMoments extends React.Component {
                     { keyMoments.map((each, i) => {
                         return (
                             <div className="key-moments-row">
-                                <h2>{each.playerNumber}</h2>
-                                <h4>{each.keyMomentText}</h4>
+                                <h2 className="key-moments-playerNumber">{each.playerNumber}</h2>
+                                <h4 className="key-moments-text">{each.keyMomentText}</h4>
                             </div>
                         );
                     })}
