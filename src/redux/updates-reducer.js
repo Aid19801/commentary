@@ -12,7 +12,6 @@ const initialState = {
 export const updatesReducer = (state = initialState, action) => {
     switch(action.type) {
         case GET_UPDATES:
-        console.log('GET UPDATES');
             return {
                 ...state,
                 hasUpdates: false,
@@ -20,7 +19,6 @@ export const updatesReducer = (state = initialState, action) => {
             }
             break;
         case GOT_UPDATES:
-            console.log('GOT UPDATES: ', action.data);
             return {
                 ...state,
                 hasUpdates: true,
@@ -30,7 +28,6 @@ export const updatesReducer = (state = initialState, action) => {
             break;
 
         case GET_UPDATES_FAIL:
-            console.log('FAIL: ', action.error);
             return {
                 ...state,
                 isError: action.error,

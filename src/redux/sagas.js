@@ -6,7 +6,6 @@ export function* watcherGetUpdates() {
 }
 
 export function* workerGetUpdates() {
-    console.log('Saga | workerGetUpdates fired');
     let data = [];
     let error = null;
 

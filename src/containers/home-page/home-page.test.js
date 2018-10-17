@@ -3,7 +3,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from '../../redux/store';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
 import HomePage from './home-page';
 import { UpdatesSection, KeyMoments } from '../index';

@@ -50,8 +50,4 @@ const mapStateToProps = (state) => ({
     data: state.updatesReducer.data,
 })
 
-// const mapDispatchToProps = (dispatch) => ({
-//     data: () => dispatch({ type: xxxx })
-// })
-
 export default connect(mapStateToProps, null)(KeyMoments);
