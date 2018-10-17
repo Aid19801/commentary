@@ -29,6 +29,7 @@
 }
 
 .updates-list-item-number {
+    margin-top: 15px;
     display: flex;
     position: absolute;
     
