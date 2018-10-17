@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
 .title {
-    border: 1px solid purple;
+    font-family: 'Comfortaa', cursive;
     display: flex;
+    margin-left: 5vw;
+
 }
 .title-text {
     color: white;

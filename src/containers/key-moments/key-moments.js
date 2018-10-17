@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Title } from '../../components';
 import './styles.css';
 
 class KeyMoments extends React.Component {
@@ -29,7 +30,7 @@ class KeyMoments extends React.Component {
         console.log('THIS state: ', keyMoments);
         return (
             <div className="key-moments-container">
-                <h1 className="key-moments-title">key moments</h1>
+                <Title title="Key Moments" />
                 <div className="key-moments-section">
                     { keyMoments.map((each, i) => {
                         return (
