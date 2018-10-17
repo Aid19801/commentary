@@ -38,8 +38,8 @@ class UpdatesContainer extends Component {
                                     src={circle}
                                 />
                             </div>
-                            
-                            <p>{each.update}</p>
+
+                            <p className="updates-list-update">{each.update}</p>
                             
                         </div>
                     )
