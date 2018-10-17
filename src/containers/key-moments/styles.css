@@ -1,8 +1,13 @@
-.key-moments {
+.key-moments-container {
     border: 1px solid blue;
     background-color: aliceblue;
 }
 
 .key-moments-title {
     border: 1px solid skyblue;
+}
+
+.key-moments-section {
+    display: flex;
+    flex-direction: column;
 }

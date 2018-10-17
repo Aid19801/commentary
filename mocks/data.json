@@ -2,41 +2,43 @@
     {
         "playerNumber": 12,
         "isKeyMoment": true,
+        "keyMomentText": "Yellow Card",
         "update": "Dier goes into the book in what is the first yellow card of the game"
     },
     {
         "playerNumber": 14,
         "isKeyMoment": false,
+        "keyMomentText": "",
         "update": "Kane is desperate to catch Liverpool's Salah in the race for the Golden Boot, but he won't do it like that - the England man has just hammered a wild shot range well off target"
     },
     {
-        "playerNumber": 12,
+        "playerNumber": 17,
+        "isKeyMoment": false,
+        "keyMomentText": "",
+        "update": "Dier goes into the book in what is the first yellow card of the game"
+    },
+    {
+        "playerNumber": 21,
         "isKeyMoment": true,
-        "update": "Dier goes into the book in what is the first yellow card of the game"
-    },
-    {
-        "playerNumber": 14,
-        "isKeyMoment": false,
+        "keyMomentText": "Goal",
         "update": "Kane is desperate to catch Liverpool's Salah in the race for the Golden Boot, but he won't do it like that - the England man has just hammered a wild shot range well off target"
     },
     {
-        "playerNumber": 12,
+        "playerNumber": 28,
         "isKeyMoment": true,
+        "keyMomentText": "Save",
         "update": "Dier goes into the book in what is the first yellow card of the game"
     },
     {
-        "playerNumber": 14,
+        "playerNumber": 29,
         "isKeyMoment": false,
+        "keyMomentText": "",
         "update": "Kane is desperate to catch Liverpool's Salah in the race for the Golden Boot, but he won't do it like that - the England man has just hammered a wild shot range well off target"
     },
     {
-        "playerNumber": 12,
-        "isKeyMoment": true,
+        "playerNumber": 31,
+        "isKeyMoment": false,
+        "keyMomentText": "",
         "update": "Dier goes into the book in what is the first yellow card of the game"
-    },
-    {
-        "playerNumber": 14,
-        "isKeyMoment": false,
-        "update": "Kane is desperate to catch Liverpool's Salah in the race for the Golden Boot, but he won't do it like that - the England man has just hammered a wild shot range well off target"
     }
 ]}
