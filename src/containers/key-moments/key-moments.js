@@ -27,7 +27,7 @@ class KeyMoments extends React.Component {
     render() {
 
         const { keyMoments } = this.state;
-        console.log('THIS state: ', keyMoments);
+
         return (
             <div className="key-moments-container">
                 <Title title="Key Moments" />

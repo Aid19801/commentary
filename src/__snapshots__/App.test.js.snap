@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="homepage"
+  >
+    <div
+      className="updates-section"
+    >
+      <div
+        className="title"
+      >
+        <h4
+          className="title-text"
+        >
+          Live Commentary
+        </h4>
+      </div>
+      <div
+        className="updates-container"
+      />
+    </div>
+    <div
+      className="key-moments-container"
+    >
+      <div
+        className="title"
+      >
+        <h4
+          className="title-text"
+        >
+          Key Moments
+        </h4>
+      </div>
+      <div
+        className="key-moments-section"
+      />
+    </div>
+  </div>
+</div>
+`;

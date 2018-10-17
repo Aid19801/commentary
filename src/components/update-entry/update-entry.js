@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
-// import { Title } from '../../components/'
+import circle from '../../images/circle.png';
 
 import './styles.css';
 
-const UpdatesEntry = () => (
-    <div className="updates-section">
-        <div className="circle">
-            <h4>number12</h4>
+const UpdatesEntry = (props) => (
+    <div className="updates-list-item" key={props.key}>
+
+        <div className="updates-list-circle-container">
+            <h4 className="updates-list-item-number">{props.playerNumber}</h4>
+            <img
+                alt="circle"
+                className="update-circle"
+                src={circle}
+            />
         </div>
-        <p></p>
+
+        <p className="updates-list-update">{props.update}</p>
+
     </div>
 );
 

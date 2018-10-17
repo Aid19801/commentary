@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import circle from '../../images/circle.png';
-// import { Title } from '../../components/'
+import { UpdatesEntry } from '../../components/'
 // import { GET_UPDATES } from '../../redux/actions';
 
 import './styles.css';
@@ -27,22 +27,7 @@ class UpdatesContainer extends Component {
         return (
             <div className="updates-container">
                 { data.map((each, i) => {
-                    return (
-                        <div className="updates-list-item" key={i}>
-
-                            <div className="updates-list-circle-container">
-                                <h4 className="updates-list-item-number">{each.playerNumber}</h4>
-                                <img
-                                    alt="circle"
-                                    className="update-circle"
-                                    src={circle}
-                                />
-                            </div>
-
-                            <p className="updates-list-update">{each.update}</p>
-                            
-                        </div>
-                    )
+                    return <UpdatesEntry playerNumber={each.playerNumber} key={i} update={each.update} />
                 })}
             </div>
         );
