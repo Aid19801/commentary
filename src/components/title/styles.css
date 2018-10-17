@@ -1,0 +1,7 @@
+.title {
+    border: 1px solid purple;
+    display: flex;
+}
+.title-text {
+    border: 1px solid black;
+}

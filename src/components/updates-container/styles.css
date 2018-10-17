@@ -1,0 +1,29 @@
+.updates-container {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.updates-list-item {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.updates-list-circle-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.update-circle {
+    width: 50px;
+    height: 50px;
+
+}
+
+.updates-list-item-number {
+    display: flex;
+    position: absolute;
+    
+}
