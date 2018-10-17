@@ -12,7 +12,8 @@
 
 
 .updates-list-circle-container {
-    position: relative;
+    display: flex;
+    justify-content: center;
     width: 50px;
     height: 50px;
 }
@@ -20,10 +21,15 @@
     width: 50px;
     height: 50px;
 
+    align-items: center;
+    justify-content: center;
+
 }
 
 .updates-list-item-number {
     display: flex;
     position: absolute;
     
+    align-items: center;
+    justify-content: center;
 }
