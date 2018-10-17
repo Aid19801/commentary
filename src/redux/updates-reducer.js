@@ -6,10 +6,10 @@ const initialState = {
     hasUpdates: false,
     data: [],
     fetchingUpdates: false,
-    isError: false,
+    isError: null,
 };
 
-const updatesReducer = (state = initialState, action) => {
+export const updatesReducer = (state = initialState, action) => {
     switch(action.type) {
         case GET_UPDATES:
         console.log('GET UPDATES');
