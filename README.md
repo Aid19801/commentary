@@ -19,6 +19,7 @@ The project is built using React (CRA)
 Redux (for state management)
 Redux Sagas (for managing async data)
 Jest/Enzyme for unit tests
+Json-server as a mock api serving an array of objects similar to those you'd find on a regular API
 
 
 
