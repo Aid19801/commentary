@@ -38,7 +38,6 @@ export const updatesReducer = (state = initialState, action) => {
             break;
 
         case SELECT_MOMENT:
-            console.log('SELECT_MOMENT: action id', typeof action.id);
             return {
                 ...state,
                 selectedMoment: action.id,

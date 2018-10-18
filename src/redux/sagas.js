@@ -12,11 +12,9 @@ export function* workerGetUpdates() {
     yield fetch('http://localhost:3000/data')
         .then(res => res.json())
         .then(json => {
-            console.log('data back: ', json);
             data = json;
         })
         .catch(err => {
-            console.log('saga | error: ', err)
             error = err;
         })
 
