@@ -1,23 +1,50 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import circle from '../../images/circle.png';
 
 import './styles.css';
 
-const UpdatesEntry = (props) => (
-    <div className="updates-list-item" key={props.key}>
+const UpdatesEntry = (props) => {
 
-        <div className="updates-list-circle-container">
-            <h4 className="updates-list-item-number">{props.playerNumber}</h4>
-            <img
-                alt="circle"
-                className="update-circle"
-                src={circle}
-            />
+    if (props.id === props.selectedMoment) {
+        return (
+        <div className="updates-list-item__selected">
+
+            <div className="updates-list-circle-container">
+                <h4 className="updates-list-item-number">{props.time}</h4>
+                <img
+                    alt="circle"
+                    className="update-circle"
+                    src={circle}
+                />
+            </div>
+
+            <p className="updates-list-update__selected">{props.update}</p>
+
         </div>
+        );
+    }
 
-        <p className="updates-list-update">{props.update}</p>
+    return (
+        <div className="updates-list-item">
 
-    </div>
-);
+            <div className="updates-list-circle-container">
+                <h4 className="updates-list-item-number">{props.time}</h4>
+                <img
+                    alt="circle"
+                    className="update-circle"
+                    src={circle}
+                />
+            </div>
 
-export default UpdatesEntry;
+            <p className="updates-list-update">{props.update}</p>
+
+        </div>
+    );
+}
+
+const mapStateToProps = (state) => ({
+    selectedMoment: state.updatesReducer.selectedMoment
+});
+
+export default connect(mapStateToProps, null)(UpdatesEntry);

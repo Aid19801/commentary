@@ -11,6 +11,12 @@
     flex-direction: row;
 }
 
+.updates-list-item__selected {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    background: #747DE8;
+}
 
 .updates-list-circle-container {
     display: flex;
@@ -43,6 +49,7 @@
     font-family: 'Comfortaa', cursive;
     color: white;
 }
+
 
 @keyframes glow{
     to {

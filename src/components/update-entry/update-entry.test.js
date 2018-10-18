@@ -13,12 +13,12 @@ describe('update entry', () => {
         expect(wrapper.html()).toEqual(expectedHtml)
         expect(wrapper.find('.updates-list-item')).toHaveLength(1);
     });
-    it('should render the expected playerNumber', () => {
-        const wrapper = shallow(<UpdatesEntry playerNumber="999999" />);
+    it('should render the expected time', () => {
+        const wrapper = shallow(<UpdatesEntry time="999999" />);
         expect(wrapper.children().find('.updates-list-item-number')).toHaveLength(1);
         expect(wrapper.children().find('.updates-list-item-number').text()).toEqual('999999');
     });
-    it('should render the expected playerNumber', () => {
+    it('should render the expected time', () => {
         const wrapper = shallow(<UpdatesEntry update="mock-update" />);
         expect(wrapper.children().find('.updates-list-item-number')).toHaveLength(1);
         expect(wrapper.children().find('.updates-list-update').text()).toEqual('mock-update');

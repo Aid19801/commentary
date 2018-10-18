@@ -27,7 +27,7 @@ class UpdatesContainer extends Component {
         return (
             <div className="updates-container">
                 { data.map((each, i) => {
-                    return <UpdatesEntry playerNumber={each.playerNumber} key={i} update={each.update} />
+                    return <UpdatesEntry id={each.id} time={each.time} key={i} update={each.update} />
                 })}
             </div>
         );

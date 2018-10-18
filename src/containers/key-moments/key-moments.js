@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { SELECT_MOMENT } from '../../redux/actions';
 import { Title } from '../../components';
 import './styles.css';
 
@@ -11,6 +12,7 @@ class KeyMoments extends React.Component {
         }
     }
 
+
     processMoments = (np) => {
         const { data } = np;
         let filteredToKeyMoments = data.filter((each) => each.isKeyMoment === true);
@@ -20,6 +22,9 @@ class KeyMoments extends React.Component {
         })
     }
     
+    handleClick = (id) => {
+        this.props.selectMoment(id)
+    }
     componentWillReceiveProps(nextProps) {
         this.processMoments(nextProps)
     }
@@ -34,8 +39,8 @@ class KeyMoments extends React.Component {
                 <div className="key-moments-section">
                     { keyMoments.map((each, i) => {
                         return (
-                            <div className="key-moments-row">
-                                <h2 className="key-moments-playerNumber">{each.playerNumber}</h2>
+                            <div onClick={() => this.handleClick(each.id)} className="key-moments-row" key={i}>
+                                <h2 className="key-moments-time">{each.time}</h2>
                                 <h4 className="key-moments-text">{each.keyMomentText}</h4>
                             </div>
                         );
@@ -50,4 +55,9 @@ const mapStateToProps = (state) => ({
     data: state.updatesReducer.data,
 })
 
-export default connect(mapStateToProps, null)(KeyMoments);
+const mapDispatchToProps = (dispatch) => ({
+    selectMoment: (id) => dispatch({ type: SELECT_MOMENT, id })
+});
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(KeyMoments);

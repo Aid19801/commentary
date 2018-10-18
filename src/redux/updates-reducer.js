@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { GET_UPDATES, GOT_UPDATES, GET_UPDATES_FAIL } from './actions';
+import { GET_UPDATES, GOT_UPDATES, GET_UPDATES_FAIL, SELECT_MOMENT } from './actions';
 
 
 const initialState = {
@@ -7,6 +7,7 @@ const initialState = {
     data: [],
     fetchingUpdates: false,
     isError: null,
+    selectedMoment: null,
 };
 
 export const updatesReducer = (state = initialState, action) => {
@@ -33,6 +34,14 @@ export const updatesReducer = (state = initialState, action) => {
                 isError: action.error,
                 fetchingUpdates: false,
                 hasUpdates: false,
+            }
+            break;
+
+        case SELECT_MOMENT:
+            console.log('SELECT_MOMENT: action id', typeof action.id);
+            return {
+                ...state,
+                selectedMoment: action.id,
             }
             break;
 
