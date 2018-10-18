@@ -1,4 +1,4 @@
-# Fantastec Demo
+# Commentary Demo
 
 To run:
 
